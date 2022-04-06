@@ -11,8 +11,17 @@ body {
 h1 {
   text-align: center;
 }
-.team {
+h5 {
+  text-align: center;
+}
+.card-text {
+	text-align: center;
+}
+#team {
 	border-radius: 50%;
+}
+.card {
+	border-radius: 50px 50px;
 }
 /* Changing the background colour for the header */
 
