@@ -8,7 +8,12 @@ body {
 	font-family: Raleway, sans-serif;
 	background-color: #fffcf8;
 }
-
+h1 {
+  text-align: center;
+}
+.team {
+	border-radius: 50%;
+}
 /* Changing the background colour for the header */
 
 header {
