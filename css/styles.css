@@ -21,7 +21,7 @@ h5 {
 	border-radius: 50%;
 }
 .card {
-	border-radius: 50px 50px;
+	border-radius: 50px 20px;
 }
 /* Changing the background colour for the header */
 
@@ -39,4 +39,14 @@ header {
 
 footer a:hover {
 	opacity: .5;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: sticky;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
