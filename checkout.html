@@ -94,17 +94,26 @@
       <span>€40</span>
       <a href="#" class="cart-btn">Add to cart</a>
 		<div id="button" class="container">
-			<button type="submit" class="btn">Submit</button>
-			<div class="popup">
+			<button type="submit" class="btn" onClick="openPopup()">Submit</button>
+			<div class="popup" id="popup">
 				<img src="images/placeholder.png" alt="tick">
 				<h2>Thank you!</h2>
 				<p>Your order has been placed successfully.</p>
-				<button type="btn">OK</button>
+				<button type="btn" onClick="closePopup()">OK</button>
 				
 			</div>
 		</div>
     </div>
   </div>
+	<script>
+		let popup = document.getElementById("popup");
+		
+		function openPopup(){
+			popup.classlist.add("open-popup");
+		function closePopup(){
+			popup.classlist.remove("open-popup");
+		}
+	</script>
 </main>
   </body>
 </html>

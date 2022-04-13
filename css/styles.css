@@ -23,59 +23,11 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
  
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px;
-  display: flex;
-}
-#button {
-	width: 100px;
-	height: 100vh;
-	background: #3c5077;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.btn {
-	padding: 10px 60px;
-	background: #fff;
-	border: 0;
-	outline: none;
-	cursor: pointer;
-	font-size: 22px;
-	font-weight: 500;
-	border-radius: 30px;
-}
-.popup {
-	width: 400px;
-	background: #fff;
-	border-radius: 6px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	text-align: center;
-	padding: 0 30px 30px;
-	color: #333;
-}
-.popup img{
-	width: 100px;
-	margin-top: -50px;
-	border-radius: 50%;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-.popup h2{
-	font-size: 38px;
-	font-weight: 500;
-	margin: 30px 0 10px;
-}
 /* Columns */
 .left-column {
   width: 65%;
   position: relative;
 }
- 
 .right-column {
   width: 35%;
   margin-top: 60px;
@@ -174,7 +126,88 @@ html, body {
   color: #43474D;
   margin-right: 20px;
 }
- 
+ /* Popup */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+#button {
+	width: 100px;
+	height: 100vh;
+	background: #3c5077;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn {
+	padding: 10px 60px;
+	background: #fff;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	font-size: 22px;
+	font-weight: 500;
+	border-radius: 30px;
+}
+.popup {
+	width: 400px;
+	background: #fff;
+	border-radius: 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)scale(0.1);
+	text-align: center;
+	padding: 0 30px 30px;
+	color: #333;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.open-popup {
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+	width: 100px;
+	margin-top: -50px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+	font-size: 38px;
+	font-weight: 500;
+	margin: 30px 0 10px;
+}
+.popup button {
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px 0;
+	background: #6fd649;
+	color: #fff;
+	border: 0;
+	outline: none;
+	font-size: 18px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup bottom{
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px 0;
+	background: #6fd649;
+	color: #fff;
+	border: 0;
+	outline: none;
+	font-size: 18px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+/* End Popup */
 .cart-btn {
   display: inline-block;
   background-color: #7DC855;
@@ -253,19 +286,4 @@ header {
 
 footer a:hover {
 	opacity: .5;
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: sticky;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.0);
-  color: #FFFFFF;
-  width: 100%;
-  padding: 20px;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: white;
 }
