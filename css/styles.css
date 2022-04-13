@@ -8,6 +8,12 @@ body {
 	font-family: Raleway, sans-serif;
 	background-color: #fffcf8;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
 h1 {
   text-align: center;
 }
@@ -21,14 +27,16 @@ h5 {
 	border-radius: 50%;
 }
 .card {
-	border-radius: 50px 20px;
+	border-radius: 50px 50px;
 }
 /* Changing the background colour for the header */
 
 header {
-	background-color: #000060;
+	background-color: #fff0e0;
 }
-
+.fw-light {
+	color: black;
+}
 /* Changing the background color for the navigation bar */
 
 .navbar {
@@ -39,14 +47,4 @@ header {
 
 footer a:hover {
 	opacity: .5;
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: sticky;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
 }
