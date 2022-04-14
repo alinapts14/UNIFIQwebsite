@@ -132,6 +132,7 @@ html, body {
   margin: 0 auto;
   padding: 15px;
   display: flex;
+
 }
 #button {
 	width: 100px;
@@ -286,4 +287,14 @@ header {
 
 footer a:hover {
 	opacity: .5;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: sticky;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.0);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
