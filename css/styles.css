@@ -134,14 +134,6 @@ html, body {
   display: flex;
 
 }
-#button {
-	width: 100px;
-	height: 100vh;
-	background: #3c5077;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 .btn {
 	padding: 10px 60px;
 	background: #fff;
@@ -157,9 +149,9 @@ html, body {
 	background: #fff;
 	border-radius: 6px;
 	position: absolute;
-	top: 50%;
+	top: 0;
 	left: 50%;
-	transform: translate(-50%,-50%)scale(0.1);
+	transform: translate(-50%,-50%) scale(0.1);
 	text-align: center;
 	padding: 0 30px 30px;
 	color: #333;
@@ -169,7 +161,7 @@ html, body {
 .open-popup {
 	visibility: visible;
 	top: 50%;
-	transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%,-50%) scale(1);
 }
 .popup img{
 	width: 100px;

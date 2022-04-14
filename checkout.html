@@ -92,16 +92,15 @@
     <!-- Product Pricing -->
     <div class="product-price">
       <span>€40</span>
-      <a href="#" class="cart-btn">Add to cart</a>
-		<div id="button" class="container">
-			<button type="submit" class="btn" onClick="openPopup()">Submit</button>
+		<!-- Start atc button -->
+		<div id="button" class="cart-btn">
+			<button type="submit" class="btn" onClick="openPopup()">Add to cart</button>
 			<div class="popup" id="popup">
 				<img src="images/placeholder.png" alt="tick">
 				<h2>Thank you!</h2>
 				<p>Your order has been placed successfully.</p>
-				<button type="btn" onClick="closePopup()">OK</button>
-				
-			</div>
+				<button type="button" onClick="closePopup()">OK</button>
+				</div>
 		</div>
     </div>
   </div>
@@ -109,9 +108,9 @@
 		let popup = document.getElementById("popup");
 		
 		function openPopup(){
-			popup.classlist.add("open-popup");
+			popup.classList.add("open-popup");
 		function closePopup(){
-			popup.classlist.remove("open-popup");
+			popup.classList.remove("open-popup");
 		}
 	</script>
 </main>
